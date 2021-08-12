@@ -1059,6 +1059,9 @@ rl_read_init_file (const char *filename)
     return 0;
   filename = "~/_inputrc";
 #endif
+  if (_rl_read_init_file (filename, 0) == 0)
+    return 0;
+  filename = STATELESS_INPUTRC;
   return (_rl_read_init_file (filename, 0));
 }
 
