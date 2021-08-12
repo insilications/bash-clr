@@ -1180,6 +1180,7 @@ run_startup_files ()
       if (no_profile == 0)
 	{
 	  maybe_execute_file (SYS_PROFILE, 1);
+	  maybe_execute_file ("/etc/profile", 1);
 
 	  if (act_like_sh)	/* sh */
 	    maybe_execute_file ("~/.profile", 1);

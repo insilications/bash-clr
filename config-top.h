@@ -99,6 +99,10 @@
 /* System-wide .bashrc file for interactive shells. */
 /* #define SYS_BASHRC "/etc/bash.bashrc" */
 
+#ifndef SYS_BASHRC
+#define SYS_BASHRC "/usr/share/defaults/etc/bash.bashrc"
+#endif
+
 /* System-wide .bash_logout for login shells. */
 /* #define SYS_BASH_LOGOUT "/etc/bash.bash_logout" */
 
